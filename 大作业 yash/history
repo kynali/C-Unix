@@ -1,0 +1,49 @@
+pwd
+ls
+ls -l
+cd ..
+cd ./yash/
+history
+cat list
+ls > list
+cat list
+head < list
+head < list > headlist
+cat headlist 
+ls
+ls | sort
+ls | sort | head
+ls | sort | head -3 > yyy
+cat yyy 
+./example 
+jobs
+./example &
+jobs
+fg 2
+bg 1
+jobs
+fg 1
+shutbg 1
+jobs
+set
+y=0
+set
+date
+TZ=CST-7
+set
+export TZ
+set
+date
+$ TZ
+$ y
+if $ y
+then
+ls
+pwd
+u=9
+else
+x=4
+ls
+fi
+set
+exit
