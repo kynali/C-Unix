@@ -1,0 +1,22 @@
+本题，仿照linux内核链表建立二叉树，依照内核链表的“从节点偏移地址找数据”的思想，建立二叉树
+
+
+	//定义二叉树结点
+	typedef struct BiTree_root
+	{
+		struct BiTree_root *left;
+		struct BiTree_root *right;
+	} Root;
+
+	// 定义二叉树数据结构体
+	typedef struct Node
+	{
+		Type data;
+		Root root;
+	} BiTreeNode;
+
+
+打印二叉树时，使用节点root偏移 2 ，获取node地址，再取出data
+
+	BiTreeNode *n = (int *)root - 2;
+    printf("%d\n", n->data);
