@@ -1,0 +1,11 @@
+图片显示了server以及三个client的对话情形
+
+my1 一枝花 富贵吉祥 这三个client相互交流，对话内容在server中可见
+
+若长达一分钟client不向server发送信息，则通过 alarm 信号关闭对应的client
+
+图中 my1 client 就是超时被强制下线
+
+一枝花 富贵吉祥 这两个 client 是自行下线
+
+程序使用 select（）函数对 socket 阻塞等待， 使用 fdset 存储 socket，并在获取信息后，对@的socket进行查询，并实现转发。
