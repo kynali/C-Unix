@@ -3,7 +3,7 @@
 #include <time.h> 
 #include <math.h>
 
-#define MAX_REN 800     //人数
+#define MAX_REN 1000     //人数
 #define MAX_DAY 100     //最长观测天数
 #define PERCENT 80      //初始感染百分比
 
